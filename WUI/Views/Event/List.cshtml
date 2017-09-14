@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Domain.Entities.Event>
+
+@{
+    ViewBag.Title = "Events";
+}
+
+@foreach(var event in Model)
+    {
+        <div class="item">
+            <h3>@event.Name</h3>
+        </div>
+    }
+
