@@ -17,8 +17,16 @@ namespace WUI.Controllers
             this.repository = eventRepository;
         }
 
+        //private Event myEvent = new Event {Name = "ASP", Description = "^-)"};
+        //Event [] arrayEvent=
+        //{
+        //    new Event {Name = "Soccer game", Description = "Zenit-Spartak"},
+        //    new Event {Name = "Day of cinema", Description = "Cinema festival"},
+        //    new Event {Name = "Race", Description = "Participants: Ferrary, Lambordginy, Mercedes"}
+        //};
         public ViewResult List()
         {
+            
             return View(repository.Events);
         }
     }

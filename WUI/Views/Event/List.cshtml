@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<Domain.Entities.Event>
 
 @{
-    ViewBag.Title = "Events";
+    ViewBag.Title = "List";
 }
 
-@foreach(var event in Model)
+@foreach (Domain.Entities.Event eve in Model)
     {
         <div class="item">
-            <h3>@event.Name</h3>
+            <h3>@eve.Name</h3>
+            @eve.Description
         </div>
     }
 
